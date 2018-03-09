@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message SomeEntity {
+    string name = 1;
+    string description = 2;
+    string message = 3;
+}
+
+service SomeService {
+    rpc ShowEntity(SomeEntity) returns (SomeEntity) {}
+}
